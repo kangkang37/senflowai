@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="relative dark-section min-h-screen flex items-center">
+    <div class="absolute inset-0">
+        <img src="{{ url_for('static', path='/images/hero-bg.jpg') }}" alt="Hero Background" class="w-full h-full object-cover opacity-30">
+    </div>
+    <div class="relative max-w-7xl mx-auto w-full">
+        <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+            <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="sm:text-center lg:text-left">
+                    <h1 class="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl fade-in space-y-4">
+                        <span class="block gradient-text text-6xl mb-4">Solutions</span>
+                        <span class="block text-neon-blue text-5xl">AI-Driven Innovation</span>
+                    </h1>
+                    <p class="mt-6 text-base text-gray-300 sm:text-lg sm:max-w-xl sm:mx-auto md:text-xl lg:mx-0 fade-in">
+                        SenFlow Technologies is committed to providing intelligent software solutions for enterprises, empowering traditional businesses through AI technology to facilitate digital transformation.
+                    </p>
+                    <div class="mt-8 sm:flex sm:justify-center lg:justify-start fade-in">
+                        <div class="rounded-md shadow">
+                            <a href="/products" class="custom-button w-full flex items-center justify-center px-8 py-3 border-0 text-base font-medium rounded-md md:py-4 md:text-lg md:px-10">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+<!-- Features Section -->
+<div class="light-section py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center fade-in">
+            <h2 class="text-base font-semibold tracking-wide uppercase gradient-text">Our Advantages</h2>
+            <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
+                Why Choose SenFlow
+            </p>
+        </div>
+
+        <div class="mt-20">
+            <div class="grid grid-cols-1 gap-12 lg:grid-cols-3">
+                <!-- Feature 1 -->
+                <div class="feature-card p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-neon-blue to-neon-purple text-white">
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="ml-4 text-xl font-medium">AI Technology</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Utilizing cutting-edge artificial intelligence technology to provide intelligent solutions
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-neon-blue to-neon-purple text-white">
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="ml-4 text-xl font-medium">Custom Development</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Providing customized solutions to ensure maximum return on investment
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-neon-blue to-neon-purple text-white">
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="ml-4 text-xl font-medium">Rapid Response</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Professional technical support team ensuring system stability and timely problem resolution
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA Section -->
+<div class="dark-section">
+    <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between">
+        <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl fade-in">
+            <span class="block">Ready to start your digital transformation?</span>
+            <span class="block gradient-text">Join us in shaping an intelligent future.</span>
+        </h2>
+        <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0 fade-in">
+            <div class="inline-flex rounded-md shadow">
+                <a href="/products" class="custom-button inline-flex items-center justify-center px-5 py-3 border-0 text-base font-medium rounded-md">
+                    Explore Products
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
+</head>
+<body class="bg-primary-dark">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-opacity-90 backdrop-filter backdrop-blur-lg bg-primary-dark border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="/" class="text-2xl font-bold gradient-text">SenFlow</a>
+                    </div>
+                    <div class="hidden md:ml-10 md:flex md:space-x-8">
+                        <a href="/" class="nav-link inline-flex items-center px-1 pt-1 text-gray-300 hover:text-neon-blue">Home</a>
+                        <a href="/products" class="nav-link inline-flex items-center px-1 pt-1 text-gray-300 hover:text-neon-blue">Products</a>
+                        <a href="/about" class="nav-link inline-flex items-center px-1 pt-1 text-gray-300 hover:text-neon-blue">About</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-primary-dark border-b border-gray-800">
+                <a href="/" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-neon-blue hover:bg-gray-700">Home</a>
+                <a href="/products" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-neon-blue hover:bg-gray-700">Products</a>
+                <a href="/about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-neon-blue hover:bg-gray-700">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark border-t border-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="fade-in">
+                    <h3 class="text-lg font-semibold mb-4 gradient-text">SenFlow Technologies</h3>
+                    <p class="text-gray-400">Focused on AI-driven software solutions</p>
+                </div>
+                <div class="fade-in">
+                    <h3 class="text-lg font-semibold mb-4 gradient-text">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-link">GitHub: XXXXX</a>
+                        <a href="#" class="social-link">Email: XXXXX@senflow.tech</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 SenFlow Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+    <script src="{{ url_for('static', path='/js/translations.js') }}"></script>
+    <script src="{{ url_for('static', path='/js/main.js') }}"></script>
+</body>
+</html> 

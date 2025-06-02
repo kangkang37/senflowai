@@ -1,0 +1,270 @@
+/* Base styles */
+:root {
+    --primary-dark: #0a0a0a;
+    --secondary-dark: #111827;
+    --neon-blue: #00f2fe;
+    --neon-purple: #4facfe;
+    --text-light: #ffffff;
+    --text-gray: #9ca3af;
+}
+
+body {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+}
+
+/* 自定义样式 */
+.prose {
+    max-width: 65ch;
+    line-height: 1.75;
+}
+
+.prose p {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+}
+
+/* 响应式导航栏 */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+    
+    .desktop-menu {
+        display: none;
+    }
+}
+
+/* 动画效果 */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* 自定义按钮样式 */
+.custom-button {
+    background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+    color: var(--primary-dark);
+    transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.3);
+}
+
+/* 卡片悬停效果 */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 自定义输入框样式 */
+.custom-input:focus {
+    border-color: #3B82F6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* 页面过渡动画 */
+.page-enter {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.page-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+/* 图标悬停效果 */
+.icon-hover {
+    transition: color 0.3s ease;
+}
+
+.icon-hover:hover {
+    color: #3B82F6;
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--neon-blue), var(--neon-purple));
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--neon-blue);
+}
+
+/* Feature card hover effects */
+.feature-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--neon-blue);
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.1);
+}
+
+/* Service card hover effects */
+.service-card {
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Team member card hover effects */
+.team-member {
+    background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+    transition: all 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 242, 254, 0.2);
+}
+
+/* Button hover effects */
+.hover-button {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hover-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: 0.5s;
+}
+
+.hover-button:hover::after {
+    left: 100%;
+}
+
+/* Navigation link hover effects */
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Social media links hover effects */
+.social-link {
+    transition: all 0.3s ease;
+    color: var(--text-gray);
+}
+
+.social-link:hover {
+    color: var(--neon-blue);
+    transform: translateY(-3px);
+}
+
+/* Fade in animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Pulse animation for important elements */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Gradient text effect */
+.gradient-text {
+    background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Image hover zoom effect */
+.image-zoom {
+    overflow: hidden;
+}
+
+.image-zoom img {
+    transition: transform 0.3s ease;
+}
+
+.image-zoom:hover img {
+    transform: scale(1.1);
+}
+
+/* Section styles */
+.light-section {
+    background-color: #ffffff;
+    color: var(--primary-dark);
+}
+
+.dark-section {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+} 
