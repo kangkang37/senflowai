@@ -1,44 +1,52 @@
 # SenFlow Technologies Website
 
-A modern, responsive website for SenFlow Technologies built with FastAPI and Python.
+This is the official website for SenFlow Technologies, showcasing our AI-driven software solutions and services.
+
+## Overview
+
+The website is built using modern web technologies and features a responsive design with a dark theme. It includes:
+
+- Home page with company introduction and key features
+- Products page showcasing our AI solutions
+- About page with company information and team details
+
+## Technologies Used
+
+- HTML5
+- CSS3 (with Tailwind CSS)
+- JavaScript
+- Modern UI/UX design principles
 
 ## Features
 
-- Modern UI with dark theme and neon accents
-- Responsive design for all device sizes
-- AI-themed backgrounds and animations
-- FastAPI backend
+- Responsive design that works on all devices
+- Dark theme with neon accents
+- Smooth animations and transitions
+- Mobile-friendly navigation
 
-## Tech Stack
+## Development
 
-- Python 3.10
-- FastAPI
-- HTML/CSS (Tailwind CSS)
-- JavaScript
+To work on this website locally:
 
-## Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/kangkang37/senflowai.git
+   ```
 
-1. Clone the repository
-```bash
-git clone [your-repo-url]
-cd senflow-site
-```
+2. Open the project in your favorite code editor
 
-2. Install dependencies
-```bash
-pip install -r requirements.txt
-```
+3. Start a local development server (e.g., using Python's built-in server):
+   ```bash
+   python -m http.server 8000
+   ```
+   Or use any other static file server of your choice.
 
-3. Run the application
-```bash
-python main.py
-```
+4. Visit `http://localhost:8000` in your browser
 
-The site will be available at `http://localhost:8000`
+## Deployment
 
-## Project Structure
+The website is deployed using GitHub Pages and can be accessed at: https://kangkang37.github.io/senflowai/
 
-- `/static` - Static assets (CSS, JS, images)
-- `/templates` - HTML templates
-- `main.py` - FastAPI application
-- `requirements.txt` - Python dependencies 
+## License
+
+All rights reserved. © 2024 SenFlow Technologies 
