@@ -1,52 +1,50 @@
 # Senflow AI Website
 
-This is the official website for Senflow AI, showcasing our AI-driven software solutions and services.
-
-## Overview
-
-The website is built using modern web technologies and features a responsive design with a dark theme. It includes:
-
-- Home page with company introduction and key features
-- Products page showcasing our AI solutions
-- About page with company information and team details
-
-## Technologies Used
-
-- HTML5
-- CSS3 (with Tailwind CSS)
-- JavaScript
-- Modern UI/UX design principles
+A modern, user-focused website for Senflow AI, dedicated to delivering practical, reliable, and user-friendly AI-powered applications.
 
 ## Features
+- Responsive, modern design
+- Dark and light theme support
+- Multi-page layout: Home, Products, About
+- Custom branding and logo
+- Animated UI and interactive effects
+- Clean, maintainable codebase
 
-- Responsive design that works on all devices
-- Dark theme with neon accents
-- Smooth animations and transitions
-- Mobile-friendly navigation
-
-## Development
-
-To work on this website locally:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/kangkang37/senflowai.git
-   ```
-
-2. Open the project in your favorite code editor
-
-3. Start a local development server (e.g., using Python's built-in server):
-   ```bash
-   python -m http.server 8000
-   ```
-   Or use any other static file server of your choice.
-
-4. Visit `http://localhost:8000` in your browser
+## Directory Structure
+```
+senflow-site/
+├── static/
+│   ├── css/
+│   ├── images/
+│   └── js/
+├── templates/
+├── index.html
+├── products.html
+├── about.html
+├── README.md
+└── ...
+```
 
 ## Deployment
+This project is primarily hosted as a static website using the **gh-pages** branch on GitHub Pages.
 
-The website is deployed using GitHub Pages and can be accessed at: https://kangkang37.github.io/senflowai/
+To deploy or update:
+1. Make changes on the `main` branch.
+2. Merge or sync `main` to `gh-pages` branch.
+3. Push `gh-pages` to GitHub. GitHub Pages will serve the latest static content from `gh-pages`.
+
+## Local Development
+You can preview the site locally with any static file server, for example:
+
+```bash
+python -m http.server 8000
+# or
+npx serve
+```
+Then open [http://localhost:8000](http://localhost:8000) in your browser.
+
+## Contributing
+Pull requests and issues are welcome! Please fork the repo and submit your suggestions or bug reports.
 
 ## License
-
 All rights reserved. © 2025 Senflow AI LLC 
