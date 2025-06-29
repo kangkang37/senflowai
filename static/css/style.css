@@ -267,4 +267,18 @@ body {
 .dark-section {
     background-color: var(--primary-dark);
     color: var(--text-light);
+}
+
+.hover-scale-text {
+    transition: transform 0.2s cubic-bezier(0.4,0,0.2,1);
+    display: inline-block;
+}
+
+.hover-scale-text:hover {
+    transform: scale(1.08);
+}
+
+.product-feature-card {
+    border-color: #4F729A !important;
+    border-width: 2px !important;
 } 

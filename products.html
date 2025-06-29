@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - SenFlow Technologies</title>
+    <title>Products - Senflow AI</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="static/css/style.css">
+    <link rel="icon" type="image/png" href="static/images/logo/logo-dark-512.png">
 </head>
 <body class="bg-primary-dark">
     <!-- Navigation -->
@@ -13,8 +14,9 @@
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <div class="flex-shrink-0">
-                        <a href="/" class="text-2xl font-bold gradient-text">SenFlow</a>
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="static/images/logo/logo-dark-512.png" alt="Senflow Logo" class="h-8 w-8 mr-2 rounded" />
+                        <a href="/" class="text-2xl font-bold gradient-text">Senflow</a>
                     </div>
                     <div class="hidden md:ml-10 md:flex md:space-x-8">
                         <a href="index.html" class="nav-link inline-flex items-center px-1 pt-1 text-gray-300 hover:text-neon-blue">Home</a>
@@ -46,171 +48,113 @@
 
     <!-- Main content -->
     <main>
-        <!-- Hero Section -->
-        <div class="relative dark-section min-h-[70vh] flex items-center">
+        <!-- 顶部 Banner 区 -->
+        <section class="relative dark-section min-h-[100vh] flex items-center justify-center py-40">
             <div class="absolute inset-0">
                 <img src="static/images/products-hero.jpg" alt="Products Hero Background" class="w-full h-full object-cover opacity-30">
             </div>
-            <div class="relative max-w-7xl mx-auto py-32 px-4 sm:px-6 lg:px-8">
-                <div class="text-center fade-in">
-                    <div class="pt-16 pb-4">
-                        <h2 class="text-base font-semibold tracking-wide uppercase text-neon-blue mb-8">Products & Services</h2>
-                        <div class="max-w-4xl mx-auto space-y-6">
-                            <div class="py-4">
-                                <p class="text-5xl font-extrabold sm:text-6xl sm:tracking-tight lg:text-7xl gradient-text">
-                                    Intelligent Solutions
-                                </p>
-                            </div>
-                            <p class="max-w-2xl mt-8 mx-auto text-xl text-gray-300">
-                                We provide comprehensive AI-driven software solutions to help enterprises achieve digital transformation
-                            </p>
-                        </div>
+            <div class="relative w-full flex flex-col items-center justify-center text-center z-10">
+                <h1 class="text-5xl sm:text-6xl font-extrabold gradient-text mb-6">Practical Apps for Everyday Life</h1>
+                <p class="text-xl md:text-2xl text-gray-200 mb-2 max-w-2xl">We design and build user-friendly applications that help people solve daily challenges, thoughtfully applying technology — including AI when it makes things better.</p>
+            </div>
+        </section>
+
+        <!-- 产品分类介绍区 -->
+        <section class="py-24 bg-white flex flex-col justify-center">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center">
+                <h2 class="text-2xl sm:text-3xl font-bold text-center mb-12" style="color:#0A659A;">Our Products & Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="feature-card product-feature-card p-8 rounded-lg text-center bg-white border shadow-sm">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900">Everyday Utility Apps</h3>
+                        <p class="text-gray-700">Convenient tools designed to simplify daily tasks with a focus on ease of use and reliability.</p>
+                    </div>
+                    <div class="feature-card product-feature-card p-8 rounded-lg text-center bg-white border shadow-sm">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900">Smart Enhancements</h3>
+                        <p class="text-gray-700">Carefully integrated technologies — such as AI when beneficial — to deliver better, more seamless experiences.</p>
+                    </div>
+                    <div class="feature-card product-feature-card p-8 rounded-lg text-center bg-white border shadow-sm">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900">Lifestyle & Productivity Solutions</h3>
+                        <p class="text-gray-700">Apps that support organization, reminders, wellness, and overall daily efficiency.</p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Products List -->
-        <div class="light-section py-24">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 gap-12 lg:grid-cols-3">
-                    <!-- Product 1 -->
-                    <div class="feature-card p-8 rounded-lg">
-                        <div class="flex items-center mb-6">
-                            <div class="flex-shrink-0">
-                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-neon-blue to-neon-purple text-white">
-                                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <h3 class="ml-4 text-xl font-medium">Intelligent Data Analysis Platform</h3>
+        <!-- Our Development Approach 区块 -->
+        <section class="py-20 dark-section relative">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl sm:text-3xl font-bold text-center text-neon-blue mb-12">Our Development Approach</h2>
+                <div class="relative flex flex-col items-center md:block py-8">
+                    <div class="md:grid md:grid-cols-2 md:gap-x-16 md:gap-y-16">
+                        <!-- 1 左上 -->
+                        <div class="feature-card p-8 rounded-lg mb-10 md:mb-0 md:col-start-1 md:row-start-1 relative md:-top-4">
+                            <h3 class="text-lg font-semibold text-white mb-2">1. Understanding Real Needs</h3>
+                            <p class="text-gray-300">Researching daily challenges to build meaningful, relevant solutions.</p>
                         </div>
-                        <p class="text-gray-600">
-                            Machine learning-based data analysis platform helping enterprises gain valuable business insights. Supports real-time data processing, visualization, and intelligent predictive analytics.
-                        </p>
-                        <div class="mt-6">
-                            <a href="#" class="text-blue-700 hover:text-blue-900 transition-colors duration-300">
-                                Learn More <span aria-hidden="true">&rarr;</span>
-                            </a>
+                        <!-- 2 右上 -->
+                        <div class="feature-card p-8 rounded-lg mb-10 md:mb-0 md:col-start-2 md:row-start-1 relative md:top-4">
+                            <h3 class="text-lg font-semibold text-white mb-2">2. Thoughtful Design</h3>
+                            <p class="text-gray-300">Creating clean, intuitive interfaces for a smooth user experience.</p>
+                        </div>
+                        <!-- 3 左下 -->
+                        <div class="feature-card p-8 rounded-lg md:col-start-1 md:row-start-2 relative md:-top-2">
+                            <h3 class="text-lg font-semibold text-white mb-2">3. Smart Technology Choices</h3>
+                            <p class="text-gray-300">Using the right technologies — introducing AI enhancements where they truly add value.</p>
+                        </div>
+                        <!-- 4 右下 -->
+                        <div class="feature-card p-8 rounded-lg md:col-start-2 md:row-start-2 relative md:top-8">
+                            <h3 class="text-lg font-semibold text-white mb-2">4. Continuous Improvement</h3>
+                            <p class="text-gray-300">Listening to user feedback and delivering regular updates to stay relevant and effective.</p>
                         </div>
                     </div>
-
-                    <!-- Product 2 -->
-                    <div class="feature-card p-8 rounded-lg">
-                        <div class="flex items-center mb-6">
-                            <div class="flex-shrink-0">
-                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-neon-blue to-neon-purple text-white">
-                                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <h3 class="ml-4 text-xl font-medium">AI Workflow Automation</h3>
-                        </div>
-                        <p class="text-gray-600">
-                            Intelligent workflow automation solutions that leverage AI technology to automate business processes, improve efficiency, and reduce human error.
-                        </p>
-                        <div class="mt-6">
-                            <a href="#" class="text-blue-700 hover:text-blue-900 transition-colors duration-300">
-                                Learn More <span aria-hidden="true">&rarr;</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Product 3 -->
-                    <div class="feature-card p-8 rounded-lg">
-                        <div class="flex items-center mb-6">
-                            <div class="flex-shrink-0">
-                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-neon-blue to-neon-purple text-white">
-                                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <h3 class="ml-4 text-xl font-medium">AI Assistant Systems</h3>
-                        </div>
-                        <p class="text-gray-600">
-                            Natural language processing-based AI assistant systems providing intelligent interaction across multiple channels and languages.
-                        </p>
-                        <div class="mt-6">
-                            <a href="#" class="text-blue-700 hover:text-blue-900 transition-colors duration-300">
-                                Learn More <span aria-hidden="true">&rarr;</span>
-                            </a>
-                        </div>
+                    <!-- 竖直箭头加长 -->
+                    <div class="hidden md:flex flex-col items-center absolute left-1/2 top-4 z-10" style="transform:translateX(-50%);">
+                        <div style="width:4px;height:200px;background:var(--neon-blue);"></div>
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 5v14m0 0l-6-6m6 6l6-6" stroke="var(--neon-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div style="width:4px;height:200px;background:var(--neon-blue);"></div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Why Choose Us 分割线 -->
+        <div class="w-full flex justify-center mb-2 mt-4">
+            <div class="h-0.5 w-64 md:w-96 rounded-full" style="background:#56A5B6;"></div>
         </div>
 
-        <!-- Service Process -->
-        <div class="dark-section py-24">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
-                    <div class="fade-in">
-                        <h2 class="text-3xl font-extrabold sm:text-4xl gradient-text">
-                            Professional Service Process
-                        </h2>
-                        <p class="mt-3 max-w-3xl text-lg text-gray-300">
-                            We provide end-to-end solutions, from requirement analysis to system deployment and maintenance.
-                        </p>
-                        <div class="mt-10 space-y-10">
-                            <!-- Service steps -->
-                            <div class="feature-card p-6 rounded-lg">
-                                <div class="flex items-center">
-                                    <div class="flex-shrink-0">
-                                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-gradient-to-r from-neon-blue to-neon-purple text-white">
-                                            <span class="text-lg font-bold">1</span>
-                                        </div>
-                                    </div>
-                                    <div class="ml-4">
-                                        <h3 class="text-lg font-medium">Requirement Analysis</h3>
-                                        <p class="mt-2 text-gray-300">In-depth understanding of client needs, developing customized solutions</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Add other service steps -->
-                        </div>
-                    </div>
-                    <div class="mt-10 lg:mt-0 fade-in">
-                        <div class="feature-card p-8 rounded-lg">
-                            <h3 class="text-2xl font-extrabold gradient-text">Why Choose Us?</h3>
-                            <ul class="mt-6 space-y-4">
-                                <li class="flex items-center">
-                                    <div class="flex-shrink-0">
-                                        <svg class="h-6 w-6 text-blue-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                                        </svg>
-                                    </div>
-                                    <p class="ml-3 text-base text-gray-300">Professional Technical Team</p>
-                                </li>
-                                <!-- Add other points -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        <!-- Why Choose Us 区块 -->
+        <section class="py-16 bg-primary-dark">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl sm:text-3xl font-bold text-center text-neon-blue mb-8">Why Choose Us?</h2>
+                <ul class="space-y-4 text-lg text-white text-center">
+                    <li>✔️ Passionate, Experienced Team</li>
+                    <li>✔️ User-Centered Design Philosophy</li>
+                    <li>✔️ Smart, Appropriate Technology Use</li>
+                    <li>✔️ Commitment to Quality and Improvement</li>
+                </ul>
             </div>
-        </div>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer class="bg-primary-dark border-t border-gray-800">
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="fade-in">
-                    <h3 class="text-lg font-semibold mb-4 gradient-text">SenFlow Technologies</h3>
+                <div class="fade-in text-center">
+                    <h3 class="text-lg font-semibold mb-4 gradient-text">Senflow AI</h3>
                     <p class="text-gray-400">Focused on AI-driven software solutions</p>
                 </div>
-                <div class="fade-in">
-                    <h3 class="text-lg font-semibold mb-4 gradient-text">Follow Us</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="social-link">GitHub: XXXXX</a>
-                        <a href="#" class="social-link">Email: XXXXX@senflow.tech</a>
+                <div class="fade-in text-center">
+                    <h3 class="text-lg font-semibold mb-4 gradient-text">Contact Us</h3>
+                    <div class="flex justify-center space-x-4">
+                        <a href="mailto:contact@senflowai.com" class="social-link">Email: contact@senflowai.com</a>
                     </div>
                 </div>
             </div>
             <div class="mt-8 border-t border-gray-800 pt-8 text-center">
-                <p class="text-gray-400">&copy; 2024 SenFlow Technologies. All rights reserved.</p>
+                <p class="text-gray-400">&copy; 2025 Senflow AI LLC. All rights reserved.</p>
             </div>
         </div>
     </footer>

@@ -1,6 +1,6 @@
-# SenFlow Technologies Website
+# Senflow AI Website
 
-This is the official website for SenFlow Technologies, showcasing our AI-driven software solutions and services.
+This is the official website for Senflow AI, showcasing our AI-driven software solutions and services.
 
 ## Overview
 
@@ -49,4 +49,4 @@ The website is deployed using GitHub Pages and can be accessed at: https://kangk
 
 ## License
 
-All rights reserved. © 2024 SenFlow Technologies 
+All rights reserved. © 2025 Senflow AI LLC 

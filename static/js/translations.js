@@ -8,7 +8,7 @@ const translations = {
         // Home page
         'hero_title': 'Intelligent Software Solutions',
         'hero_subtitle': 'AI-Driven Innovation',
-        'hero_description': 'SenFlow Technologies is committed to providing intelligent software solutions for enterprises, empowering traditional businesses through AI technology to facilitate digital transformation.',
+        'hero_description': 'Senflow AI is committed to providing intelligent software solutions for enterprises, empowering traditional businesses through AI technology to facilitate digital transformation.',
         'learn_more': 'Learn More',
 
         // Products page
@@ -17,8 +17,8 @@ const translations = {
 
         // About page
         'about_title': 'About',
-        'about_subtitle': 'SenFlow Technologies',
-        'about_description': 'Founded in 2024, SenFlow Technologies is a software development company focused on AI-driven solutions. We are committed to providing intelligent solutions to help enterprises achieve digital transformation.',
+        'about_subtitle': 'Senflow AI',
+        'about_description': 'Founded in 2025, Senflow AI is a software development company focused on AI-driven solutions. We are committed to providing intelligent solutions to help enterprises achieve digital transformation.',
         'our_vision': 'Our Vision',
         'vision_text': 'To become a leader in the AI field, driving industry development through technological innovation and creating greater value for our clients.',
         'our_mission': 'Our Mission',
